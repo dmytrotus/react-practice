@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+//Lesson 7
+
+import Constants from './components/Constants'
+
+ReactDOM.render(<Constants />, document.getElementById("root"))
 
 //Lesson 6
 
-import App from './App'
+/*import App from './App'
 
-ReactDOM.render(<App />, document.getElementById("root"))
+ReactDOM.render(<App />, document.getElementById("root"))*/
 
 //Lesson 5
 /*import AppCheckbox from './components/AppCheckbox'

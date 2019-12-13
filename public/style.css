@@ -1,3 +1,16 @@
+*{
+	margin:0;
+	padding: 0;
+}
 .header{
-	background: red;
+	background: #272727;
+	padding: 20px;
+	color: #fff;
+	text-align: center;
+}
+.footer{
+	color: #fff;
+	text-align: right;
+	padding: 10px;
+	background: #29336e;
 }
