@@ -1,11 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+//Lesson 9
+
+import Contact from './components/Contact'
+ReactDOM.render(<Contact />, document.getElementById("root"))
+
 
 //Lesson 8
 
-import AppCheckboxWithTodoItems from './components/AppCheckboxWithTodoItems'
-ReactDOM.render(<AppCheckboxWithTodoItems />, document.getElementById("root"))
+/*import AppCheckboxWithTodoItems from './components/AppCheckboxWithTodoItems'
+ReactDOM.render(<AppCheckboxWithTodoItems />, document.getElementById("root"))*/
 
 
 
