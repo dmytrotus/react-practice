@@ -1,11 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+
+//Lesson 8
+
+import AppCheckboxWithTodoItems from './components/AppCheckboxWithTodoItems'
+ReactDOM.render(<AppCheckboxWithTodoItems />, document.getElementById("root"))
+
+
+
 //Lesson 7
 
-import Constants from './components/Constants'
+/*import Constants from './components/Constants'
 
-ReactDOM.render(<Constants />, document.getElementById("root"))
+ReactDOM.render(<Constants />, document.getElementById("root"))*/
 
 //Lesson 6
 

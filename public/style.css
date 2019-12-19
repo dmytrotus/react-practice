@@ -14,3 +14,15 @@
 	padding: 10px;
 	background: #29336e;
 }
+.constants{
+	background: #131a3f;
+	color: #fff;
+}
+.constants h1, p{
+	padding: 20px 0;
+}
+.checkboxes > div{
+	padding: 20px;
+	background: #ddd;
+	margin: 10px 0;
+}
