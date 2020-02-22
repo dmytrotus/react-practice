@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import ReactForm from './components/ReactForm';
+import FormProps from './components/FormProps';
 
 
-ReactDOM.render(<ReactForm />, document.getElementById("root"))
+ReactDOM.render(<FormProps />, document.getElementById("root"));
