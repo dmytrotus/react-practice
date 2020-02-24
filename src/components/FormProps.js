@@ -7,8 +7,10 @@ class Nav extends React.Component {
       <nav>
         Nav
         <div style={{ float: "right" }}>
-          {this.props.username && `Welcome ${this.props.username}`}
+          {this.props.username && `Welcome ${this.props.username}. `}
+          Your password is: {this.props.password}
         </div>
+
       </nav>
     );
   }
@@ -53,7 +55,9 @@ class FormProps extends React.Component {
   render() {
     return (
       <div>
-        <Nav username={this.state.username} />
+        <Nav username={this.state.username}
+        	 password={this.state.password}
+         />
         <Login
           handleSubmit={this.handleSubmit}
           onUsernameChange={this.onUsernameChange}

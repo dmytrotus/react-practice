@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style>
+		#redsquare{
+			width: 50px;
+			height: 50px;
+			background: red;
+			position: relative;
+		}
+	</style>
+</head>
+<body>
+	
+		<span id="minutes">00</span>
+		<span id="seconds">00</span>
+
+		<div id="redsquare"></div>
+
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+	<script>
+
+		function timer(){
+
+		var sec = 0;
+		function pad ( val ) { return val > 9 ? val : "0" + val; }
+		intervalID = setInterval( function(){
+		document.getElementById("seconds").innerHTML=pad(++sec%60);
+		document.getElementById("minutes").innerHTML=pad(parseInt(sec/60,10));
+		}, 1000);
+		};
+
+		timer();
+
+		function changeSquareColor(){
+			//$('#redsquare').css('background' , 'green');
+			if( $('#redsquare').css('background') == 'green' )
+			{
+				alert('green');
+				$('#redsquare').css('background', 'red');
+			}else
+			{
+				$('#redsquare').css('background' , 'green');
+			}
+		}
+
+		setInterval(function() {
+		            changeSquareColor();
+		            console.log('bsdb');
+		      }, 5000);
+		
+		
+	</script>
+</body>
+</html>

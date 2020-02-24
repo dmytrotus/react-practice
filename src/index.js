@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import FormProps from './components/FormProps';
+import ParentComponent from './components/Boomerang';
 
 
-ReactDOM.render(<FormProps />, document.getElementById("root"));
+ReactDOM.render(<ParentComponent />, document.getElementById("root"));
