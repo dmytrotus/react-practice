@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import ParentComponent from './components/Boomerang';
+import ReduxComponent from './components/ReduxComponent';
 
 
-ReactDOM.render(<ParentComponent />, document.getElementById("root"));
+ReactDOM.render(<ReduxComponent />, document.getElementById("root"));
