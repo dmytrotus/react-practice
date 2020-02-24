@@ -2,57 +2,29 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import ReduxComponent from './components/ReduxComponent';
-
 import { createStore } from 'redux';
+import allReducer from './reducers';///mistake
+
+import { Provider } from 'react-redux';
+
+import NumberFromRedux from './components/NumberFromRedux';
 
 
-
-//store -> Globalized State
-
-
-//Action
-const increment = () => {
-	return {
-		type: 'INCREMENT'
-	}
-}
-
-const decrement = () => {
-	return {
-		type: 'DECREMENT'
-	}
-}
-
-//reducer
-const counter = (state = 0, action) => {
-	switch(action.type){
-		case "INCREMENT":
-			return state + 1;
-		case "DECREMENT":
-			return state - 1;
-	}
-};
-
-//create variable
-let store = createStore(counter);
-
-//display it in the console
-store.subscribe(() => console.log(store.getState()));
-
-
-
-//dispatch
-store.dispatch(increment())
-store.dispatch(increment())
-store.dispatch(increment())
-store.dispatch(increment())
-
-store.dispatch(decrement())
-store.dispatch(decrement())
+const store = createStore(
+	allReducer,
+	window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+	);
 
 
 
 
 
+ReactDOM.render(
+	<Provider store={store}>
+	<ReduxComponent />
+	</Provider>, document.getElementById("root"));
 
-ReactDOM.render(<ReduxComponent />, document.getElementById("root"));
+ReactDOM.render(
+	<Provider store={store}>
+	<NumberFromRedux />
+	</Provider>, document.getElementById("number"));
